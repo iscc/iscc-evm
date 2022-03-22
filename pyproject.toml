@@ -9,7 +9,8 @@ repository = "https://github.com/iscc/iscc-evm"
 keywords=["iscc", "identifier", "decentralized", "registry", "blockchain", "similarity"]
 
 [tool.poetry.dependencies]
-python = ">=3.7,<4.0"
+python = ">=3.7,<3.10"
+vyper = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
