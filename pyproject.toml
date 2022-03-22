@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "iscc-evm"
 version = "0.1.0"
-description = ""
-authors = ["Titusz Pan <titusz.pan@gmail.com>"]
+description = "EVM Smart Contracts for ISCC declarations"
+authors = ["Titusz <tp@py7.de>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/iscc/iscc-evm"
+keywords=["iscc", "identifier", "decentralized", "registry", "blockchain", "similarity"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.7,<4.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
