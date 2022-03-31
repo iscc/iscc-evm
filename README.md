@@ -42,3 +42,9 @@ also provide a URL where additional declaration information conforming to the IS
 can be found (see: https://schema.iscc.codes/)
 
 The `data`-field is reserved for protocol extensions.
+
+# EVM Deployments
+
+- ISCC-REGISTRAR v1.0 on [Rinkeby](https://rinkeby.etherscan.io/address/0x232BE91F5c4D8aAfe00557A1108c27D51db567B3)
+- ISCC-HUB v1.0 on [Rinkeby](https://rinkeby.etherscan.io/address/0x485f167fb70dd73bc494ff76bb992d1ec8d6d2e4)
+
