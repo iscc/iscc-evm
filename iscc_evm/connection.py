@@ -48,13 +48,18 @@ def w3_client():
 def get_live_contract_registrar(addr=iscc_evm.settings.registrar_address, account=0):
     w3 = w3_client()
     w3.eth.defaultAccount = w3.eth.accounts[account]
-    return w3.eth.contract(address=addr, abi=iscc_evm.compile_contract(iscc_evm.SOURCE_FILE_REGISTRAR)["abi"])
+    return w3.eth.contract(
+        address=addr,
+        abi=iscc_evm.compile_contract(iscc_evm.SOURCE_FILE_REGISTRAR)["abi"],
+    )
 
 
 def get_live_contract_hub(addr=iscc_evm.settings.hub_address, account=0):
     w3 = w3_client()
     w3.eth.defaultAccount = w3.eth.accounts[account]
-    return w3.eth.contract(address=addr, abi=iscc_evm.compile_contract(iscc_evm.SOURCE_FILE_HUB)["abi"])
+    return w3.eth.contract(
+        address=addr, abi=iscc_evm.compile_contract(iscc_evm.SOURCE_FILE_HUB)["abi"]
+    )
 
 
 def ipfs_client():

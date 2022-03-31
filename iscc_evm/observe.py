@@ -13,5 +13,5 @@ def observe_hub():
         pp(dict(event))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     observe_hub()

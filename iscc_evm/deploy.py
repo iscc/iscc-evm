@@ -70,10 +70,4 @@ if __name__ == "__main__":
     hub_addr = deploy_hub()
     reg_addr = deploy_registrar(hub=hub_addr)
 
-    ENV.write_text(
-        f'REGISTRAR_ADDRESS="{reg_addr}"\n'
-        f'HUB_ADDRESS="{hub_addr}"'
-    )
-
-
-
+    ENV.write_text(f'REGISTRAR_ADDRESS="{reg_addr}"\n' f'HUB_ADDRESS="{hub_addr}"')
