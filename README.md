@@ -36,12 +36,12 @@ The resulting ISCC-ID of an ISCC-CODE declaration is owned by the signee of the 
 transaction (`tx.origin`) and not by the calling contract (`msg.sender`). ISCC-IDs are minted, 
 indexed, and resolved off-chain by public ISCC-RESOLVERS.
 
-The ISCC-HUB ensures that registration events  can be monitored efficiently and always include at 
-least the addreses of the DECLARER (tx.origin) and the REGISTRAR (msg.sender). It is recommended to 
+The ISCC-HUB ensures that registration events can be monitored efficiently and always include the 
+addreses of the DECLARER (tx.origin) and the REGISTRAR (msg.sender). It is recommended to 
 also provide a URL where additional declaration information conforming to the ISCC metadata schema 
 can be found (see: https://schema.iscc.codes/)
 
-The `data`-field is reserved for protocol extensions.
+The `message`-field is reserved for protocol extensions.
 
 # EVM Deployments
 

@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-import json
-
 from loguru import logger as log
 import iscc_evm
 from pprint import pp
