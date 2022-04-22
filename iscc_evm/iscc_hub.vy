@@ -1,6 +1,6 @@
 # @version ^0.3.1
 """
-@title ISCC-HUB Contract v1.1
+@title ISCC-HUB Contract v1.2
 @notice For use by ISCC-REGISTRAR contracts to announce ISCC-CODES for unique ISCC-ID minting.
 @dev For further documentation see https://github.com/iscc/iscc-evm
 """
@@ -12,20 +12,9 @@ event IsccDeclaration:
     declarer: address
     registrar: address
 
-operator: public(address)
-
+@nonpayable
 @external
-def __init__():
-    self.operator = msg.sender
-
-@external
-@payable
-def __default__():
-    pass
-
-@external
-@payable
-def iscc_announce(_iscc: String[96], _url: String[128] = "", _message: String[128] = "") -> bool:
+def iscc_announce(_iscc: String[96], _url: String[128], _message: String[128]) -> bool:
     """
     @notice Emits an event that is interpreted by an ISCC observer to mint/update/delete an ISCC-ID
     @param _iscc ISCC-CODE to be declared (excluding the "ISCC:" prefix)
@@ -38,13 +27,3 @@ def iscc_announce(_iscc: String[96], _url: String[128] = "", _message: String[12
     assert tx.origin != msg.sender, "Cannot announce directly, use an ISCC-REGISTRAR contract!"
     log IsccDeclaration(_iscc, _url, _message, tx.origin, msg.sender)
     return True
-
-@external
-def transfer(_to: address, _amount: uint256):
-    """
-    @notice Allow to transfer any income the contract may receive
-    """
-    assert msg.sender == self.operator
-    assert self.balance >= _amount
-    send(_to, _amount)
-

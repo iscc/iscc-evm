@@ -1,12 +1,12 @@
 # @version ^0.3.1
 """
-@title ISCC-REGISTRAR Contract v1.1
+@title ISCC-REGISTRAR Contract v1.2
 @notice Registrar conract for declaring ISCC-CODEs to claim unique ISCC-IDs.
 @dev For further documentation see https://github.com/iscc/iscc-evm
 """
 
 interface IsccHub:
-    def iscc_announce(_iscc: String[96], _url: String[128] = "", _message: String[128] = "") -> bool: payable
+    def iscc_announce(_iscc: String[96], _url: String[128], _message: String[128]) -> bool: nonpayable
 
 hub: public(address)
 operator: public(address)
@@ -18,7 +18,7 @@ def __init__(_hub: address):
 
 @external
 @payable
-def iscc_declare(_iscc: String[96], _url: String[128] = "", _message: String[128] = "") -> bool:
+def iscc_declare(_iscc: String[96], _url: String[128], _message: String[128]) -> bool:
     """
     @notice Announces an ISCC declaration to IsccHub to create/mint an ISCC-ID
     @param _iscc ISCC-CODE to be declared in standard base32 encoding (excluding the "ISCC:" prefix)
