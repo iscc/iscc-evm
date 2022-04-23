@@ -45,6 +45,6 @@ The `message`-field is reserved for protocol extensions.
 
 # EVM Deployments
 
-
-- ISCC-REGISTRAR v1.2 on Rinkeby https://rinkeby.etherscan.io/address/0x6cFD889219abc3Dc4FdB441e37C5C0eBAB4EDE59
-- ISCC-HUB v1.2 on Rinkeby https://rinkeby.etherscan.io/address/0x7956c3b659776015670277E0A6809Bf8ae5a257F
+- Demo ISCC-REGISTRAR v1.2 Vyper on Rinkeby https://rinkeby.etherscan.io/address/0x6cFD889219abc3Dc4FdB441e37C5C0eBAB4EDE59
+- Demo ISCC-REGISTRAR v1.2 Solidity on Rinkeby https://rinkeby.etherscan.io/address/0xfde3ec229f47a76ec8b957c2d892aaf2314371d3
+- Demo  ISCC-HUB v1.2 Vyper on Rinkeby https://rinkeby.etherscan.io/address/0x7956c3b659776015670277E0A6809Bf8ae5a257F
