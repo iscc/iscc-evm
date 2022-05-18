@@ -20,12 +20,12 @@ blockchains.
 ## The ISCC-REGISTRAR contract
 
 An ISCC-REGISTRAR contract offers ISCC-CODE declarations to its users for claimig unique, short
-and owned ISCC-IDs. To become an ISCC-REGISTRAR a contract must offer an `iscc_declare` method that
-registers ISCC-CODEs by calling the `iscc_announce` method of the ISCC-HUB contract.
+and owned ISCC-IDs. To become an ISCC-REGISTRAR a contract must offer an `declare` method that
+registers ISCC-CODEs by calling the `announce` method of the ISCC-HUB contract.
 
 ## The ISCC-HUB contract
 
-The ISCC-HUB contract exposes the "iscc_announce" interface for other contracts to declare
+The ISCC-HUB contract exposes the `announce` interface for other contracts to declare
 ISCC-CODEs and emits `IsccDeclaration`-events.
 
 The minimal input for an ISCC-CODE declaration is the ISCC-CODE itself. ISCC-CODE declarations 

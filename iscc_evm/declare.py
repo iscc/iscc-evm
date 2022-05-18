@@ -8,7 +8,7 @@ def declare(iscc_code, url, account=0):
     log.debug(f"Calling {ct.address}")
     log.debug(ct)
 
-    tx_hash_digest = ct.functions.iscc_declare(iscc_code, url, "").transact()
+    tx_hash_digest = ct.functions.declare(iscc_code, url, "").transact()
     log.debug(f"ISCC declared (txid: {tx_hash_digest.hex()})")
     return tx_hash_digest.hex()
 

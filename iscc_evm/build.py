@@ -11,7 +11,9 @@ def build():
     for fp in HERE.glob("*.vy"):
         # compile
         r = subprocess.run(
-            ["vyper", fp.as_posix()], capture_output=True, universal_newlines=True
+            ["vyper", "--show-gas-estimates", fp.as_posix()],
+            capture_output=True,
+            universal_newlines=True,
         )
         outpath = fp.parent / (fp.stem + ".bin")
         with io.open(outpath, "wt", newline="\u000A") as outf:
@@ -20,7 +22,7 @@ def build():
 
         # export abi
         r = subprocess.run(
-            ["vyper", "-f", "abi", fp.as_posix()],
+            ["vyper", "--show-gas-estimates", "-f", "abi", fp.as_posix()],
             capture_output=True,
             universal_newlines=True,
         )
