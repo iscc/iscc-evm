@@ -1,4 +1,4 @@
-# @version ^0.3.3
+# @version ^0.3.4
 """
 @title ISCC-REGISTRAR Contract v1.4
 @notice Registrar contract for declaring ISCC-CODEs to claim unique ISCC-IDs.

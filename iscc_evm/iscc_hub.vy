@@ -1,4 +1,4 @@
-# @version ^0.3.3
+# @version ^0.3.4
 """
 @title ISCC-HUB Contract v1.4
 @notice For use by ISCC-REGISTRAR contracts to announce ISCC-CODES for unique ISCC-ID minting.
