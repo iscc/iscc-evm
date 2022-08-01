@@ -61,8 +61,8 @@ can be found (see: https://schema.iscc.codes/)
 ISCC announcement from ISCC-REGISTRARs to these ISCC-HUB contracts will register live ISCC-IDs
 on ISCC MetaRegistries:
 
-ISCC-HUB v1.4 on Ethereum: https://etherscan.io/address/0x02F883581225e8eE144E73DfFd17DCbde1A453E7
-ISCC-HUB v1.4 on Polygon: https://polygonscan.com/address/0xA03881b52bCC908be7eF56Bf45584Dd4eF38e31D
+- ISCC-HUB v1.4 on **Ethereum**: https://etherscan.io/address/0x02F883581225e8eE144E73DfFd17DCbde1A453E7
+- ISCC-HUB v1.4 on **Polygon**: https://polygonscan.com/address/0xA03881b52bCC908be7eF56Bf45584Dd4eF38e31D
 
 # EVM Testnet Deployments
 
