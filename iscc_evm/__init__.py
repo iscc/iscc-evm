@@ -4,7 +4,7 @@ from loguru import logger as log
 from platformdirs import PlatformDirs
 from iscc_evm.settings import settings
 
-__version__ = "0.1.0"
+__version__ = "0.1.4"
 APP_NAME = "iscc-evm"
 APP_AUTHOR = "iscc"
 dirs = PlatformDirs(appname=APP_NAME, appauthor=APP_AUTHOR)

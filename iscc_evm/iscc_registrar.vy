@@ -1,6 +1,6 @@
 # @version ^0.3.3
 """
-@title ISCC-REGISTRAR Contract v1.3
+@title ISCC-REGISTRAR Contract v1.4
 @notice Registrar contract for declaring ISCC-CODEs to claim unique ISCC-IDs.
 @dev For further documentation see https://github.com/iscc/iscc-evm
 """

@@ -1,6 +1,6 @@
 # @version ^0.3.3
 """
-@title ISCC-HUB Contract v1.3
+@title ISCC-HUB Contract v1.4
 @notice For use by ISCC-REGISTRAR contracts to announce ISCC-CODES for unique ISCC-ID minting.
 @dev For further documentation see https://github.com/iscc/iscc-evm
 """
