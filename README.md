@@ -69,10 +69,11 @@ on ISCC MetaRegistries:
 ISCC declarations on the latest testnet versions will show up on https://testnet.iscc.id
 
 ## Latest Testnet Version
-- Demo ISCC-HUB v1.4 on Rinkeby (Ethereum) https://rinkeby.etherscan.io/address/0xaA7AAD99075da1c2D206fCa08fE991C4611B1b04
+- Demo ISCC-HUB v1.4 on Goerli (Ethereum) https://goerli.etherscan.io/address/0xa03881b52bcc908be7ef56bf45584dd4ef38e31d
 - Demo ISCC-HUB v1.4 on Mumbai (Polygon) https://mumbai.polygonscan.com/address/0x4301ef777ccd080e3780789e2908bf8a0ae9899e
 
 ## Previous Testnet Deployments
+- Demo ISCC-HUB v1.4 on Rinkeby (Ethereum) https://rinkeby.etherscan.io/address/0xaA7AAD99075da1c2D206fCa08fE991C4611B1b04
 - Demo ISCC-HUB v1.3 Vyper on Rinkeby https://rinkeby.etherscan.io/address/0x6E0B3E8a182a812b3cCa3C4F13E848bB389C3277
 - Demo ISCC-HUB v1.3 Vaper on Mumbai https://mumbai.polygonscan.com/address/0x70aA323a88A9847231D1CdeE43A84c01f479A5BD
 - Demo ISCC-REGISTRAR v1.3 Solidity on Rinkeby https://rinkeby.etherscan.io/address/0xd693ec9cd9850887e18246e12e64aff1a59b4ae6
